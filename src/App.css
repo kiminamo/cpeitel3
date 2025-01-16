@@ -1,0 +1,98 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+h2 {
+  color: #61dafb;
+  font-size: 18px;
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button {
+  background-color: #61dafb;
+  color: #fff;
+  font-size: 7px;
+  border: none;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #4fa3d1;
+}
+
+button:active {
+  background-color: #3877a7;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 400px) {
+  .App-header {
+    width: 250px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
